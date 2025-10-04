@@ -1,0 +1,7 @@
+﻿services:
+  renature-back-end:
+    image: renature-back-end
+    build:
+      context: .
+      dockerfile: renature-back-end/Dockerfile
+
