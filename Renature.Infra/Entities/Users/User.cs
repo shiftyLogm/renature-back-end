@@ -1,4 +1,4 @@
-namespace Renature.Infra.Entities.User;
+namespace Renature.Infra.Entities.Users;
 
 public class User
 {

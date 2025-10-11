@@ -2,7 +2,7 @@ using Renature.Infra.Entities.Contributions.Enums;
 
 namespace Renature.Infra.Entities.Contributions;
 
-public class Contributions
+public class Contribution
 {
     public Guid id { get; set; }
     public Guid UserId { get; set; }

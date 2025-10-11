@@ -1,6 +1,10 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "renature-back-end", "renature-back-end\renature-back-end.csproj", "{F25FE81E-29F7-4E00-B934-D16D2F5D8FC4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Renature.API", "Renature.API\Renature.API.csproj", "{6D638149-05EB-4ABC-991A-C871C0B370AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Renature.Applications", "Renature.Applications\Renature.Applications.csproj", "{A45D6B57-EF55-4124-B7FF-5970BF1B6F74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Renature.Infra", "Renature.Infra\Renature.Infra.csproj", "{3993ED9D-E7B3-44A7-B6EA-D895B1D2F0AD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -8,9 +12,17 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F25FE81E-29F7-4E00-B934-D16D2F5D8FC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F25FE81E-29F7-4E00-B934-D16D2F5D8FC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F25FE81E-29F7-4E00-B934-D16D2F5D8FC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F25FE81E-29F7-4E00-B934-D16D2F5D8FC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D638149-05EB-4ABC-991A-C871C0B370AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D638149-05EB-4ABC-991A-C871C0B370AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D638149-05EB-4ABC-991A-C871C0B370AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D638149-05EB-4ABC-991A-C871C0B370AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A45D6B57-EF55-4124-B7FF-5970BF1B6F74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A45D6B57-EF55-4124-B7FF-5970BF1B6F74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A45D6B57-EF55-4124-B7FF-5970BF1B6F74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A45D6B57-EF55-4124-B7FF-5970BF1B6F74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3993ED9D-E7B3-44A7-B6EA-D895B1D2F0AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3993ED9D-E7B3-44A7-B6EA-D895B1D2F0AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3993ED9D-E7B3-44A7-B6EA-D895B1D2F0AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3993ED9D-E7B3-44A7-B6EA-D895B1D2F0AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

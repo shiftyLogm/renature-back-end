@@ -1,8 +1,8 @@
-namespace Renature.API.Services;
+namespace Renature.API.Extensions;
 
-public static class Builder
+public static class ApplicationBuilderExtensions
 {
-    public static void UseBuildServices(this WebApplication builder)
+    public static void UseApiMiddlewares(this WebApplication builder)
     {
         if (builder.Environment.IsDevelopment())
         {

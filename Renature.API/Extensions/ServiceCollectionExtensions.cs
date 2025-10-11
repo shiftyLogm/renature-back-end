@@ -1,6 +1,6 @@
-namespace Renature.API.Services;
+namespace Renature.API.Extensions;
 
-public static class Api
+public static class ServiceCollectionExtensions
 {
     public static void UseApiServices(this IServiceCollection services)
     {

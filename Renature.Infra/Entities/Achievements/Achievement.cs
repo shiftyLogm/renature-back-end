@@ -1,4 +1,4 @@
-namespace Renature.Infra.Entities.Achievement;
+namespace Renature.Infra.Entities.Achievements;
 
 public class Achievement
 {

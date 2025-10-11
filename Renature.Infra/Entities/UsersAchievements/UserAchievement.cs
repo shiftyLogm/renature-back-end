@@ -1,14 +1,17 @@
-namespace Renature.Infra.Entities.UserAchievements;
+using Renature.Infra.Entities.Achievements;
+using Renature.Infra.Entities.Users;
 
-public class UserAchievements
+namespace Renature.Infra.Entities.UsersAchievements;
+
+public class UserAchievement
 {
     public Guid UserId { get; set; }
     public Guid AchievementId { get; set; }
     
     #region Foreign Keys
     
-    public User.User User { get; set; }
-    public Achievement.Achievement Achievement { get; set; }
+    public User User { get; set; }
+    public Achievement Achievement { get; set; }
     
     #endregion
 }

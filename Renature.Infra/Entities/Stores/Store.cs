@@ -1,6 +1,6 @@
 using NpgsqlTypes;
 
-namespace Renature.Infra.Entities.Store;
+namespace Renature.Infra.Entities.Stores;
 
 public class Store
 {
