@@ -1,6 +1,0 @@
-@renature_back_end_HostAddress = http://localhost:5027
-
-GET {{renature_back_end_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
