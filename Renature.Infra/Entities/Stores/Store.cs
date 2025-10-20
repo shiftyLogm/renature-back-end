@@ -1,10 +1,10 @@
 using NpgsqlTypes;
+using Renature.Infra.Comuns;
 
 namespace Renature.Infra.Entities.Stores;
 
-public class Store
+public class Store : Entity
 {
-    public Guid Id { get; set; }
     public string Name { get; set; }
     public NpgsqlPoint Coordinates { get; set; }
 }

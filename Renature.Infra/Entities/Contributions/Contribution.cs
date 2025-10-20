@@ -1,10 +1,10 @@
+using Renature.Infra.Comuns;
 using Renature.Infra.Entities.Contributions.Enums;
 
 namespace Renature.Infra.Entities.Contributions;
 
-public class Contribution
+public class Contribution : Entity
 {
-    public Guid id { get; set; }
     public Guid UserId { get; set; }
     public WasteType WasteType { get; set; }
     public string Product { get; set; }

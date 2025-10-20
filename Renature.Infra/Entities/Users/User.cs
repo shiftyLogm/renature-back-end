@@ -1,8 +1,9 @@
+using Renature.Infra.Comuns;
+
 namespace Renature.Infra.Entities.Users;
 
-public class User
+public class User : Entity
 {
-    public Guid Id { get; set; }
     public int Level { get; set; }
     public int Points { get; set; }
 }

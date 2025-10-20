@@ -11,5 +11,7 @@ public static class ApplicationBuilderExtensions
         }
         
         builder.UseHttpsRedirection();
+        builder.UseRouting();
+        builder.MapControllers();
     }
 }
