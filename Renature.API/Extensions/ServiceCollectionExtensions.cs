@@ -1,3 +1,4 @@
+using Renature.Applications;
 using Renature.Infra.Services;
 
 namespace Renature.API.Extensions;
@@ -10,5 +11,7 @@ public static class ServiceCollectionExtensions
         services.AddEndpointsApiExplorer();
         services.AddSwaggerGen();
         services.AddInfrastructure(configuration);
+        services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+        services.AddApplications();
     }
 }

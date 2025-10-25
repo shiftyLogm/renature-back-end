@@ -1,4 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
+using Renature.Applications.Stores.Interfaces;
+using Renature.Applications.Stores.Responses;
 using Renature.Infra.Entities.Stores;
 using Renature.Infra.Entities.Stores.Interfaces;
 
@@ -8,25 +10,25 @@ namespace Renature.API.Controllers;
 [ApiController]
 public class StoreController : ControllerBase
 {
-    private readonly IStoreRepository _storeRepository;
-
-    // Construtor tradicional
-    public StoreController(IStoreRepository repository)
+    private readonly IStoreService _storeService;
+    
+    public StoreController(IStoreService storeService)
     {
-        _storeRepository = repository;
+        _storeService = storeService;
     }
 
     [HttpGet("{id}")]
-    public async Task<ActionResult<Store>> GetById(
+    public async Task<ActionResult<StoreResponse>> GetById(
         [FromRoute] Guid id)
     {
-        var store = await _storeRepository.GetById(id);
+        var store = await _storeService.GetById(id, this);
+        return store;
+    }
 
-        if (store == null)
-        {
-            return NotFound();
-        }
-
-        return Ok(store);
+    [HttpGet]
+    public ActionResult<List<StoreResponse>> GetAll()
+    {
+        var stores = _storeService.GetAll(this);
+        return stores;
     }
 }

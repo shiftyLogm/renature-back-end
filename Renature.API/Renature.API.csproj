@@ -19,6 +19,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\Renature.Applications\Renature.Applications.csproj" />
+      <ProjectReference Include="..\Renature.Domain\Renature.Domain.csproj" />
       <ProjectReference Include="..\Renature.Infra\Renature.Infra.csproj" />
     </ItemGroup>
 
