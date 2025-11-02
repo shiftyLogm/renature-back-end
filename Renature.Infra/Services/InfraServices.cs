@@ -2,6 +2,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Renature.Infra.Contexts;
+using Renature.Infra.Entities.Achievements;
+using Renature.Infra.Entities.Achievements.Interfaces;
 using Renature.Infra.Entities.Stores;
 using Renature.Infra.Entities.Stores.Interfaces;
 
@@ -30,6 +32,7 @@ public static class InfraServices
     private static IServiceCollection AddDependencies(this IServiceCollection services)
     {
         services.AddScoped<IStoreRepository, StoreRepository>();
+        services.AddScoped<IAchievementRepository, AchievementRepository>();
 
         return services;
     }

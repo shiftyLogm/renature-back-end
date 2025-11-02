@@ -18,8 +18,7 @@ public class StoreController : ControllerBase
     }
 
     [HttpGet("{id}")]
-    public async Task<ActionResult<StoreResponse>> GetById(
-        [FromRoute] Guid id)
+    public async Task<ActionResult<StoreResponse>> GetById([FromRoute] Guid id)
     {
         var store = await _storeService.GetById(id, this);
         return store;

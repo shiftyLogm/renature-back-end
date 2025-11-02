@@ -13,11 +13,9 @@ public class AchievementEntityMap : IEntityTypeConfiguration<Achievement>
 
         builder.Property(x => x.Title)
             .IsRequired();
-        
-        builder.Property(x => x.Description)
-            .IsRequired();
-        
-        builder.Property(x => x.Image)
-            .IsRequired();
+
+        builder.Property(x => x.Description);
+
+        builder.Property(x => x.Image);
     }
 }
