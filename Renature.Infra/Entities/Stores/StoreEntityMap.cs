@@ -7,7 +7,7 @@ public class StoreEntityMap : IEntityTypeConfiguration<Store>
 {
     public void Configure(EntityTypeBuilder<Store> builder)
     {
-        builder.ToTable("store");
+        builder.ToTable("Stores");
         
         builder.HasKey(x => x.Id);
 

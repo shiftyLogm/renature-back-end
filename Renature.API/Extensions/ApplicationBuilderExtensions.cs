@@ -1,3 +1,5 @@
+using Renature.Infra.Entities.Users;
+
 namespace Renature.API.Extensions;
 
 public static class ApplicationBuilderExtensions
@@ -13,5 +15,6 @@ public static class ApplicationBuilderExtensions
         builder.UseHttpsRedirection();
         builder.UseRouting();
         builder.MapControllers();
+        // builder.MapIdentityApi<User>().WithTags("Identity User");
     }
 }
