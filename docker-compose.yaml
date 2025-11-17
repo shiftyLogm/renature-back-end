@@ -1,0 +1,14 @@
+﻿version: '3.8'
+
+services:
+  postgres:
+    container_name: renature-pb-postgres
+    image: postgres:16
+    hostname: localhost
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: renature-bd
+      POSTGRES_PASSWORD: senhaS3creta
+    volumes:
+      - /home/Renature/docker/postgres/data:/var/lib/postgresql/data
