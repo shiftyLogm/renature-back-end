@@ -25,6 +25,19 @@ public static class ServiceCollectionExtensions
         services.AddApplications();
         #endregion
 
+        #region Cors Configuration
+        services.AddCors(options =>
+        {
+            options.AddPolicy("AllowAll", policy =>
+            {
+                policy
+                    .AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    .AllowAnyHeader();
+            });
+        });
+        #endregion
+
         #region Authentication & Authorization
         services.UseJwtConfiguration(configuration);
         #endregion
