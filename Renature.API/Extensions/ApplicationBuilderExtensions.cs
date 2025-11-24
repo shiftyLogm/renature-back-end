@@ -13,6 +13,8 @@ public static class ApplicationBuilderExtensions
         builder.UseHttpsRedirection();
         
         builder.UseRouting();
+
+        builder.UseCors("AllowAll");
         
         builder.UseAuthentication();
         builder.UseAuthorization();
